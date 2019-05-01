@@ -69,7 +69,6 @@ namespace RPSLS
                     break;
                 default:
                     Console.WriteLine("That wasnt an option, please try again");
-                    Console.ReadLine();
                     ChooseWep();
                     break;
             }

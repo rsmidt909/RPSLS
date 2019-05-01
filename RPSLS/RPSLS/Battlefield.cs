@@ -227,11 +227,20 @@ namespace RPSLS
             }
         }
 
+        public void tellOptions()
+        {
+            foreach (string option in options)
+            {
+                Console.WriteLine(option);
+            }
+        }
+
         public void MasterMeth()
         {
-            /*Console.WriteLine(options);
+            Console.Clear();
+            tellOptions();
             Console.ReadLine();
-            Console.Clear();*/
+            Console.Clear();
             player1.ChooseWep();
             Console.Clear();
             player2.ChooseWep();
@@ -241,8 +250,10 @@ namespace RPSLS
             Console.WriteLine(battleResult);
             CheckCounter();
             Console.WriteLine(gameCheck);
-            GameCheck();
             Console.ReadLine();
+            GameCheck();
+       
+            
         }
 
 
