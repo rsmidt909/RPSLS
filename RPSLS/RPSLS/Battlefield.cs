@@ -14,11 +14,11 @@ namespace RPSLS
         //member variables (HAS A)
         Player1 player1;
         Player2 player2;
+        Referee referee;
         int p1Counter;
         int p2Counter;
         int cCounter;
         string gameCheck;
-        List<string> options = new List<string>();
         string battleResult;
 
 
@@ -29,17 +29,12 @@ namespace RPSLS
         {
             player1 = new Player1();
             player2 = new Player2();
+            referee = new Referee();
             
             p1Counter = 0;
             p2Counter = 0;
             cCounter = 0;
             gameCheck = null;
-            options.Add("Remember, Your Choices Are As Listed Below");
-            options.Add("Rock");
-            options.Add("Paper");
-            options.Add("Scissors");
-            options.Add("Lizard");
-            options.Add("Spock");
             battleResult = null;
         }
 
@@ -227,18 +222,11 @@ namespace RPSLS
             }
         }
 
-        public void tellOptions()
-        {
-            foreach (string option in options)
-            {
-                Console.WriteLine(option);
-            }
-        }
 
         public void MasterMeth()
         {
             Console.Clear();
-            tellOptions();
+            referee.tellOptions();
             Console.ReadLine();
             Console.Clear();
             player1.ChooseWep();

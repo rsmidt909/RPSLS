@@ -46,27 +46,27 @@ namespace RPSLS
             {
                 case "Rock":
                     wep = "Rock";
-                    Console.WriteLine("You Chose Rock");
+                    Console.WriteLine("You Chose Rock. Please Press Enter");
                     Console.ReadLine();
                     break;
                 case "Paper":
                     wep = "Paper";
-                    Console.WriteLine("You Chose Paper");
+                    Console.WriteLine("You Chose Paper. Please Press Enter");
                     Console.ReadLine();
                     break;
                 case "Scissors":
                     wep = "Scissors";
-                    Console.WriteLine("You Chose Scissors");
+                    Console.WriteLine("You Chose Scissors. Please Press Enter");
                     Console.ReadLine();
                     break;
                 case "Lizard":
                     wep = "Lizard";
-                    Console.WriteLine("You Chose Lizard");
+                    Console.WriteLine("You Chose Lizard. Please Press Enter");
                     Console.ReadLine();
                     break;
                 case "Spock":
                     wep = "Spock";
-                    Console.WriteLine("You Chose Spock");
+                    Console.WriteLine("You Chose Spock. Please Press Enter");
                     Console.ReadLine();
                     break;
                 default:
