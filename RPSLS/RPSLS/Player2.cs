@@ -38,9 +38,9 @@ namespace RPSLS
 
         public string ChooseWep()
         {
-            Console.WriteLine("Please choose your weapon. /'Rock/', /'Paper/', /'Scissors/', /'Lizard/', or /'Spock/'.");
+            Console.WriteLine("Player 2 Please choose your weapon. 'Rock', 'Paper', 'Scissors', 'Lizard', or 'Spock'.");
             string WepChoice = Console.ReadLine();
-            switch (WepChoice)
+          switch (WepChoice)
             {
                 case "Rock":
                     wep = "Rock";
@@ -49,7 +49,7 @@ namespace RPSLS
                     break;
                 case "Paper":
                     wep = "Paper";
-                    Console.WriteLine("You Chose Rock");
+                    Console.WriteLine("You Chose Paper");
                     Console.ReadLine();
                     break;
                 case "Scissors":

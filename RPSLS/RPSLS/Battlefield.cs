@@ -14,12 +14,12 @@ namespace RPSLS
         //member variables (HAS A)
         Player1 player1;
         Player2 player2;
-        string roundWinner;
         int p1Counter;
         int p2Counter;
         int cCounter;
         string gameCheck;
         List<string> options = new List<string>();
+        string battleResult;
 
 
 
@@ -29,166 +29,171 @@ namespace RPSLS
         {
             player1 = new Player1();
             player2 = new Player2();
-            roundWinner = DoBattle();
+            
             p1Counter = 0;
             p2Counter = 0;
             cCounter = 0;
-            gameCheck = CheckCounter();
+            gameCheck = null;
             options.Add("Remember, Your Choices Are As Listed Below");
             options.Add("Rock");
             options.Add("Paper");
             options.Add("Scissors");
             options.Add("Lizard");
             options.Add("Spock");
+            battleResult = null;
         }
 
 
 
         //member methods(CAN DO)
         public string DoBattle()
-        { if (player1.wep == "Rock" && player2.wep == "Rock")
+        { if (player1.wep == "Rock" & player2.wep == "Rock")
             {               
-               return "Tie!";
+               return battleResult = "Tie!";
 
-            } else if (player1.wep == "rock" && player2.wep == "Paper")
+            } else if (player1.wep == "Rock" & player2.wep == "Paper")
             {
-                return "Player 2 wins!";
+                
+                return battleResult = "Player 2 wins!";
                     
-            }else if (player1.wep == "rock" && player2.wep == "Scissors")
+            }else if (player1.wep == "rock" & player2.wep == "Scissors")
             {
-                return "Player 1 wins!";
+                return battleResult = "Player 1 wins!";
                     
-            } else if (player1.wep == "Rock" && player2.wep == "Lizard")
+            } else if (player1.wep == "Rock" & player2.wep == "Lizard")
             {
-                return "Player 1 wins!";
+                return battleResult = "Player 1 wins!";
                     
-            } else if (player1.wep == "Rock" && player2.wep == "Spock")
+            } else if (player1.wep == "Rock" & player2.wep == "Spock")
             {
-                return "Player 2 wins!";
+                return battleResult = "Player 2 wins!";
                     
             }
             //-------------------------------------------------------------
-            else if (player1.wep == "Paper" && player2.wep == "Paper")
+            else if (player1.wep == "Paper" & player2.wep == "Paper")
             {
-                return "Tie!";
+                return battleResult = "Tie!";
             }
-            else if (player1.wep == "Paper" && player2.wep == "Rock")
+            else if (player1.wep == "Paper" & player2.wep == "Rock")
             {
-                return "Player 1 wins!";
+                return battleResult = "Player 1 wins!";
                     
             }
-            else if (player1.wep == "Paper" && player2.wep == "Scissors")
+            else if (player1.wep == "Paper" & player2.wep == "Scissors")
             {
-                return "Player 2 wins!";
+                return battleResult = "Player 2 wins!";
 
             }
-            else if (player1.wep == "Paper" && player2.wep == "Lizard")
+            else if (player1.wep == "Paper" & player2.wep == "Lizard")
             {
                 return "Player 2 wins!";
                     
             }
-            else if (player1.wep == "Paper" && player2.wep == "Spock")
+            else if (player1.wep == "Paper" & player2.wep == "Spock")
             {
-                return "Player 1 wins!";
+                return battleResult = "Player 1 wins!";
                     
             }
             //-----------------------------------------------------------------
-            else if (player1.wep == "Scissors" && player2.wep == "Scissors")
+            else if (player1.wep == "Scissors" & player2.wep == "Scissors")
             {
-                return "Tie!";
+                return battleResult = "Tie!";
             }
-            else if (player1.wep == "Sissors" && player2.wep == "Rock")
+            else if (player1.wep == "Scissors" & player2.wep == "Rock")
             {
-                return "Player 2 wins!";
+                return battleResult = "Player 2 wins!";
 
 
             }
-            else if (player1.wep == "Scissors" && player2.wep == "Paper")
+            else if (player1.wep == "Scissors" & player2.wep == "Paper")
             {
-                return "Player 1 wins!";
+                return battleResult = "Player 1 wins!";
 
             }
-            else if (player1.wep == "Scissors" && player2.wep == "Lizard")
+            else if (player1.wep == "Scissors" & player2.wep == "Lizard")
             {
-                return "Player 1 wins!";
+                return battleResult = "Player 1 wins!";
 
             }
-            else if (player1.wep == "Scissors" && player2.wep == "Spock")
+            else if (player1.wep == "Scissors" & player2.wep == "Spock")
             {
-                return "Player 2 wins!";
+                return battleResult = "Player 2 wins!";
 
 
             }
             //-----------------------------------------------------------------------------
-            else if (player1.wep == "Lizard" && player2.wep == "Lizard")
+            else if (player1.wep == "Lizard" & player2.wep == "Lizard")
             {
-                return "Tie!";
+                return battleResult = "Tie!";
 
             }
-            else if (player1.wep == "Lizard" && player2.wep == "Rock")
+            else if (player1.wep == "Lizard" & player2.wep == "Rock")
             {
-                return "Player 2 wins!";
+                return battleResult = "Player 2 wins!";
 
             }
-            else if (player1.wep == "Lizard" && player2.wep == "Paper")
+            else if (player1.wep == "Lizard" & player2.wep == "Paper")
             {
-                return "Player 1 wins!";
+                return battleResult = "Player 1 wins!";
 
             }
-            else if (player1.wep == "Lizard" && player2.wep == "Scissors")
+            else if (player1.wep == "Lizard" & player2.wep == "Scissors")
             {
-                return "Player 2 wins!";
+                return battleResult = "Player 2 wins!";
 
             }
-            else if (player1.wep == "Lizard" && player2.wep == "Spock")
+            else if (player1.wep == "Lizard" & player2.wep == "Spock")
             {
-                return "Player 1 wins!";
+                return battleResult = "Player 1 wins!";
 
 
             }
             //-------------------------------------------------------------------
-            else if (player1.wep == "Spock" && player2.wep == "Spock")
+            else if (player1.wep == "Spock" & player2.wep == "Spock")
             {
-                return "Tie!";
+                return battleResult = "Tie!";
 
             }
-            else if (player1.wep == "Spock" && player2.wep == "Rock")
+            else if (player1.wep == "Spock" & player2.wep == "Rock")
             {
-                return "Player 1 wins!";
+                return battleResult = "Player 1 wins!";
 
             }
-            else if (player1.wep == "Spock" && player2.wep == "Paper")
+            else if (player1.wep == "Spock" & player2.wep == "Paper")
             {
-                return "Player 2 wins!";
+                return battleResult = "Player 2 wins!";
 
             }
-            else if (player1.wep == "Spock" && player2.wep == "Scissors")
+            else if (player1.wep == "Spock" & player2.wep == "Scissors")
             {
-                return "Player 1 wins!";
+                return battleResult = "Player 1 wins!";
 
             }
-            else if (player1.wep == "Spock" && player2.wep == "Lizard")
+            else if (player1.wep == "Spock" & player2.wep == "Lizard")
             {
-                return "Player 2 wins!";
+                return battleResult = "Player 2 wins!";
 
 
             } else
             {
-                return "Something went wrong....";
+                return battleResult = "Something went wrong....";
             };
         }   
 
         public int AddCounter()
         {
-            if (roundWinner == "Player 1 Wins!")
+            if (battleResult == "Player 1 wins!")
             {
-                return p1Counter++;
-            }else if (roundWinner == "Player 2 Wins!")
+                p1Counter++;
+                return p1Counter;
+            }else if (battleResult == "Player 2 wins!")
             {
-                return p2Counter++;
-            }else if (roundWinner == "Computer Wins!")
+                p2Counter++;
+                return p2Counter;
+            }else if (battleResult == "Computer wins!")
             {
-                return cCounter++;
+                cCounter++;
+                return cCounter;
             } else
             {
                 return 0;
@@ -201,16 +206,16 @@ namespace RPSLS
         {
             if (p1Counter == 3)
             {
-                return "Player 1 Wins The Game!";
+                return gameCheck = "Player 1 Wins The Game!";
             } else if (p2Counter == 3)
             {
-                return "Player 2 Wins The Game!";
+                return gameCheck = "Player 2 Wins The Game!";
             } else if (cCounter == 3)
             {
-                return "Computer Wins The Game!";
+                return gameCheck = "Computer Wins The Game!";
             } else
             {
-                return "Next Round!";
+                return gameCheck = "Next Round!";
             }
         }
 
@@ -224,19 +229,20 @@ namespace RPSLS
 
         public void MasterMeth()
         {
-            Console.WriteLine(options);
+            /*Console.WriteLine(options);
             Console.ReadLine();
-            Console.Clear();
+            Console.Clear();*/
             player1.ChooseWep();
             Console.Clear();
             player2.ChooseWep();
             Console.Clear();
             DoBattle();
             AddCounter();
-            Console.WriteLine(roundWinner);
+            Console.WriteLine(battleResult);
             CheckCounter();
             Console.WriteLine(gameCheck);
             GameCheck();
+            Console.ReadLine();
         }
 
 

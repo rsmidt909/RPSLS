@@ -1,0 +1,7 @@
+C:\Users\rsmid\Desktop\dev\c#\RPSLS\RPSLS\RPSLS\bin\Debug\RPSLS.exe.config
+C:\Users\rsmid\Desktop\dev\c#\RPSLS\RPSLS\RPSLS\bin\Debug\RPSLS.exe
+C:\Users\rsmid\Desktop\dev\c#\RPSLS\RPSLS\RPSLS\bin\Debug\RPSLS.pdb
+C:\Users\rsmid\Desktop\dev\c#\RPSLS\RPSLS\RPSLS\obj\Debug\RPSLS.csprojAssemblyReference.cache
+C:\Users\rsmid\Desktop\dev\c#\RPSLS\RPSLS\RPSLS\obj\Debug\RPSLS.csproj.CoreCompileInputs.cache
+C:\Users\rsmid\Desktop\dev\c#\RPSLS\RPSLS\RPSLS\obj\Debug\RPSLS.exe
+C:\Users\rsmid\Desktop\dev\c#\RPSLS\RPSLS\RPSLS\obj\Debug\RPSLS.pdb
