@@ -11,8 +11,8 @@ namespace RPSLS
 
 
         //member variables (HAS A)
-        bool turn;
-        string wep;
+        public bool turn;
+        public string wep;
 
 
         //Constructor (BUILDS OBJECT)

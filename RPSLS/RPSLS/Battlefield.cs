@@ -12,9 +12,9 @@ namespace RPSLS
 
 
         //member variables (HAS A)
-        
-
-
+        Player1 player1;
+        Player2 player2;
+        string roundWinner;
 
 
 
@@ -24,6 +24,7 @@ namespace RPSLS
         {
             player1 = new Player1();
             player2 = new Player2();
+            roundWinner = DoBattle();
         }
 
 
