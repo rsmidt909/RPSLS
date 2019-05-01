@@ -19,6 +19,7 @@ namespace RPSLS
         int p2Counter;
         int cCounter;
         string gameCheck;
+        List<string> options = new List<string>();
 
 
 
@@ -33,6 +34,12 @@ namespace RPSLS
             p2Counter = 0;
             cCounter = 0;
             gameCheck = CheckCounter();
+            options.Add("Remember, Your Choices Are As Listed Below");
+            options.Add("Rock");
+            options.Add("Paper");
+            options.Add("Scissors");
+            options.Add("Lizard");
+            options.Add("Spock");
         }
 
 
@@ -171,7 +178,7 @@ namespace RPSLS
             };
         }   
 
-        public int addCounter()
+        public int AddCounter()
         {
             if (roundWinner == "Player 1 Wins!")
             {
@@ -207,7 +214,30 @@ namespace RPSLS
             }
         }
 
+        public void GameCheck()
+        {
+            if(gameCheck == "Next Round!")
+            {
+                MasterMeth();
+            }
+        }
 
+        public void MasterMeth()
+        {
+            Console.WriteLine(options);
+            Console.ReadLine();
+            Console.Clear();
+            player1.ChooseWep();
+            Console.Clear();
+            player2.ChooseWep();
+            Console.Clear();
+            DoBattle();
+            AddCounter();
+            Console.WriteLine(roundWinner);
+            CheckCounter();
+            Console.WriteLine(gameCheck);
+            GameCheck();
+        }
 
 
 
