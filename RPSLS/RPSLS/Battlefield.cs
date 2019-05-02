@@ -12,30 +12,27 @@ namespace RPSLS
 
 
         //member variables (HAS A)
-        Player1 player1;
-        Player2 player2;
-        Referee referee;
+        Player player1;
+        Player player2;
+        public Referee referee;
         int p1Counter;
         int p2Counter;
-        int cCounter;
         string gameCheck;
         string battleResult;
-
 
 
         //Constructor (BUILDS OBJECT)
 
         public Battlefield()
         {
-            player1 = new Player1();
-            player2 = new Player2();
+            player1 = new Human();
+            player2 = null;
             referee = new Referee();
-            
             p1Counter = 0;
-            p2Counter = 0;
-            cCounter = 0;
+            p2Counter = 0;            
             gameCheck = null;
             battleResult = null;
+            
         }
 
 
@@ -181,15 +178,13 @@ namespace RPSLS
             {
                 p1Counter++;
                 return p1Counter;
-            }else if (battleResult == "Player 2 wins!")
+            }
+            else if (battleResult == "Player 2 wins!")
             {
                 p2Counter++;
                 return p2Counter;
-            }else if (battleResult == "Computer wins!")
-            {
-                cCounter++;
-                return cCounter;
-            } else
+            } 
+            else
             {
                 return 0;
             }
@@ -199,16 +194,15 @@ namespace RPSLS
 
         public string CheckCounter()
         {
-            if (p1Counter == 3)
+            if (p1Counter == 2)
             {
                 return gameCheck = "Player 1 Wins The Game!";
-            } else if (p2Counter == 3)
+            }
+             else if (p2Counter == 2)
             {
                 return gameCheck = "Player 2 Wins The Game!";
-            } else if (cCounter == 3)
-            {
-                return gameCheck = "Computer Wins The Game!";
-            } else
+            } 
+             else
             {
                 return gameCheck = "Next Round!";
             }
@@ -225,12 +219,13 @@ namespace RPSLS
 
         public void MasterMeth()
         {
-            Console.Clear();
-            referee.tellOptions();
+
+            Console.WriteLine("Player 1 Turn. Press Enter");
             Console.ReadLine();
-            Console.Clear();
             player1.ChooseWep();
             Console.Clear();
+            Console.WriteLine("Player 2 Turn. Press Enter");
+            Console.ReadLine();
             player2.ChooseWep();
             Console.Clear();
             DoBattle();
@@ -243,6 +238,20 @@ namespace RPSLS
        
             
         }
+
+       
+
+        public void Mode()
+        {
+            if (referee.gameMode == "PvP")
+            {
+                player2 = new Human();
+            } else if (referee.gameMode == "PvC")
+            {
+                player2 = new Computer();
+            }
+        }
+        
 
 
 

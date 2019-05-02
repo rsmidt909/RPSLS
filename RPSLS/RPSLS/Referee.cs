@@ -12,7 +12,7 @@ namespace RPSLS
 
         //member variables (HAS A)
         List<string> options = new List<string>();
-        string gameMode;
+        public string gameMode;
 
 
 

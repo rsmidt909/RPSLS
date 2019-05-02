@@ -11,6 +11,12 @@ namespace RPSLS
         static void Main(string[] args)
         {
             Battlefield RPSLS = new Battlefield();
+            RPSLS.referee.GameType();
+            RPSLS.Mode();
+            Console.Clear();
+            RPSLS.referee.tellOptions();
+            Console.ReadLine();
+            Console.Clear();
             RPSLS.MasterMeth();
 
         }
