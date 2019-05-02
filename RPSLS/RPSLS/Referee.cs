@@ -45,10 +45,10 @@ namespace RPSLS
             }
         }
 
-        public string GameType()
+        public void GameType()
         {
             Console.WriteLine("What Kind of Game Would You Like To Play? PvP or PvC?");
-               string gameMode = Console.ReadLine();
+               gameMode = Console.ReadLine();
                 switch (gameMode)
             {   case "PvP":
                     gameMode = "PvP";
@@ -65,7 +65,7 @@ namespace RPSLS
                     GameType();
                     break;
 
-            }return gameMode;
+            }
         }
 
     }

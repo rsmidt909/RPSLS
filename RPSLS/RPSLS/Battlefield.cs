@@ -19,7 +19,7 @@ namespace RPSLS
         int p2Counter;
         string gameCheck;
         string battleResult;
-
+        
 
         //Constructor (BUILDS OBJECT)
 
@@ -32,6 +32,7 @@ namespace RPSLS
             p2Counter = 0;            
             gameCheck = null;
             battleResult = null;
+            
             
         }
 
@@ -216,6 +217,17 @@ namespace RPSLS
             }
         }
 
+        public void Mode()
+        {
+            if (referee.gameMode == "PvP")
+            {
+                player2 = new Human();
+            }
+            else if (referee.gameMode == "PvC")
+            {
+                player2 = new Computer();
+            }
+        }
 
         public void MasterMeth()
         {
@@ -241,16 +253,7 @@ namespace RPSLS
 
        
 
-        public void Mode()
-        {
-            if (referee.gameMode == "PvP")
-            {
-                player2 = new Human();
-            } else if (referee.gameMode == "PvC")
-            {
-                player2 = new Computer();
-            }
-        }
+        
         
 
 
