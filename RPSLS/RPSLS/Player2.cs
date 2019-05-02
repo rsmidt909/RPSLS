@@ -6,37 +6,25 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class Player2
+    class Player2 : Player
     {
         //member variables (HAS A)
-        public bool turn;
-        public string wep;
+      
 
 
         //Constructor (BUILDS OBJECT)
 
         public Player2()
         {
-            turn = false;
-            wep = null;
+         
         }
 
 
         //member methods(CAN DO)
 
-        public bool IsTurn()
-        {
-            turn = true;
-            return turn;
-        }
+       
 
-        public bool IsNotTurn()
-        {
-            turn = false;
-            return turn;
-        }
-
-        public string ChooseWep()
+        public override string ChooseWep()
         {
             Console.WriteLine("Player 2 Please choose your weapon. 'Rock', 'Paper', 'Scissors', 'Lizard', or 'Spock'.");
             string WepChoice = Console.ReadLine();
