@@ -12,7 +12,7 @@ namespace RPSLS
 
         //member variables (HAS A)
         List<string> options = new List<string>();
-
+        string gameMode;
 
 
 
@@ -27,7 +27,7 @@ namespace RPSLS
             options.Add("Lizard");
             options.Add("Spock");
             options.Add("Press Enter...");
-
+            gameMode = null;
 
         }
 
@@ -45,12 +45,28 @@ namespace RPSLS
             }
         }
 
-        /*public string GameType()
+        public string GameType()
         {
             Console.WriteLine("What Kind of Game Would You Like To Play? PvP or PvC?");
-               return gameMode = Console.ReadLine();
+               string gameMode = Console.ReadLine();
+                switch (gameMode)
+            {   case "PvP":
+                    gameMode = "PvP";
+                    Console.WriteLine("You Chose PvP. Please Press Enter");
+                    Console.ReadLine();
+                    break;
+                case "PvC":
+                    gameMode = "PvC";
+                    Console.WriteLine("You Chose PvC. Please Press Enter");
+                    Console.ReadLine();
+                    break;
+                default:
+                    Console.WriteLine("Please Choose A Valid Game Mode.");
+                    GameType();
+                    break;
 
-        };*/
+            }return gameMode;
+        }
 
     }
 }
