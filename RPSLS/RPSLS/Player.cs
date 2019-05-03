@@ -12,8 +12,8 @@ namespace RPSLS
 
         //member variables (HAS A)
 
-        public string wep;
-
+        public string weapon;
+        public int pCounter;
 
 
 
@@ -22,8 +22,8 @@ namespace RPSLS
 
         public Player()
         {
-
-            wep = null;
+            pCounter = 0;
+            weapon = null;
 
         }
 
@@ -32,7 +32,7 @@ namespace RPSLS
 
         //member methods(CAN DO)
 
-        public abstract string ChooseWep();
+        public abstract string ChooseWeapon();
 
 
     }

@@ -30,42 +30,42 @@ namespace RPSLS
 
         
 
-        public override string ChooseWep()
+        public override string ChooseWeapon()
         {
             Console.WriteLine("Please choose your weapon. 'Rock', 'Paper', 'Scissors', 'Lizard', or 'Spock'.");
-            string WepChoice = Console.ReadLine();
-            switch (WepChoice)
+            string WeaponChoice = Console.ReadLine();
+            switch (WeaponChoice)
             {
                 case "Rock":
-                    wep = "Rock";
+                    weapon = "Rock";
                     Console.WriteLine("You Chose Rock. Please Press Enter");
                     Console.ReadLine();
                     break;
                 case "Paper":
-                    wep = "Paper";
+                    weapon = "Paper";
                     Console.WriteLine("You Chose Paper. Please Press Enter");
                     Console.ReadLine();
                     break;
                 case "Scissors":
-                    wep = "Scissors";
+                    weapon = "Scissors";
                     Console.WriteLine("You Chose Scissors. Please Press Enter");
                     Console.ReadLine();
                     break;
                 case "Lizard":
-                    wep = "Lizard";
+                    weapon = "Lizard";
                     Console.WriteLine("You Chose Lizard. Please Press Enter");
                     Console.ReadLine();
                     break;
                 case "Spock":
-                    wep = "Spock";
+                    weapon = "Spock";
                     Console.WriteLine("You Chose Spock. Please Press Enter");
                     Console.ReadLine();
                     break;
                 default:
                     Console.WriteLine("That wasnt an option, please try again");         
-                    ChooseWep();
+                    ChooseWeapon();
                     break;
-            } return wep;
+            } return weapon;
         }
 
 

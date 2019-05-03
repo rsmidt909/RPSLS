@@ -28,34 +28,33 @@ namespace RPSLS
         //member methods(CAN DO)
 
 
-        public override string ChooseWep()
+        public override string ChooseWeapon()
         {
-            Console.WriteLine("");
-            int WepChoice = RandomNumber(1, 5);
-            switch (WepChoice)
+            int WeaponChoice = RandomNumber(1, 5);
+            switch (WeaponChoice)
             {
                 case 1:
-                    wep = "Rock";
+                    weapon = "Rock";
                     Console.WriteLine("The Computer Chose Rock. Please Press Enter");
                     Console.ReadLine();
                     break;
                 case 2:
-                    wep = "Paper";
+                    weapon = "Paper";
                     Console.WriteLine("The Computer Chose Paper. Please Press Enter");
                     Console.ReadLine();
                     break;
                 case 3:
-                    wep = "Scissors";
+                    weapon = "Scissors";
                     Console.WriteLine("The Computer Chose Scissors. Please Press Enter");
                     Console.ReadLine();
                     break;
                 case 4:
-                    wep = "Lizard";
+                    weapon = "Lizard";
                     Console.WriteLine("The Computer Chose Lizard. Please Press Enter");
                     Console.ReadLine();
                     break;
                 case 5:
-                    wep = "Spock";
+                    weapon = "Spock";
                     Console.WriteLine("The Computer Chose Spock. Please Press Enter");
                     Console.ReadLine();
                     break;
@@ -63,7 +62,7 @@ namespace RPSLS
                     Console.WriteLine("Something Went Wrong.....");
                     break;
             }
-            return wep;
+            return weapon;
         }
 
         public int RandomNumber(int min, int max)
